@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import Navbar from './component/navbar';
 import CtrlPanel from './component/ctrlPanel';
-
+import SetupPanel from './component/setupPanel';
+import InfoPanel from './component/infoPanel';
 
 class App extends Component {
 
@@ -14,6 +15,8 @@ class App extends Component {
         </Helmet>
         <Navbar />
         <CtrlPanel />
+        <SetupPanel />
+        
 
       </div>
       
