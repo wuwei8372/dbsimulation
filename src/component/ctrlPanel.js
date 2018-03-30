@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import "../Assets/css/ctrlPanel.css"
+import "../Assets/css/ctrlPanel.css";
+
 
 
 class CtrlPanel extends Component {
@@ -10,8 +11,11 @@ class CtrlPanel extends Component {
       		startCulture: 'Start Culture',
           reset: 'Reset',
           calculate: 'Calculate Recipe'
+          
     }
   }
+  
+  
   render()  {
     return (
     	<div className="CtrlPanel">
@@ -27,6 +31,7 @@ class CtrlPanel extends Component {
           <button
             className="btn btn-primary"  
             onClick={this.props.handleClick}>{this.state.calculate}</button>
+          
         </div>
       </div>
     	);

@@ -11,9 +11,18 @@ class InfoPanel extends Component {
 	  			<div className="panel-body">
 			       	<p>
 			       	The current selection of species is: {this.props.species}
-			       	The current selection of temperature is: 
-			       	The current selection of salinity is: 
-			       	The current selection of durg is: 
+			       	</p>
+			       	<p>
+			       	The current selection of temperature is: {this.props.temperature}
+			       	</p>
+			       	<p>
+			       	The current selection of salinity is: {this.props.salinity}
+			       	</p>
+			       	<p>
+			       	The current selection of durg is: {this.props.drug}
+			       	</p>
+			       	<p>
+			       	The current recipe for reagent needed for the experiment is:
 			       	</p>
 	  			</div>
 			</div>

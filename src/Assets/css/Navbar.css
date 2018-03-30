@@ -1,18 +1,17 @@
-body {
-  background-color: #99ff99; }
-  body ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333; }
-    body ul li {
-      float: right; }
-      body ul li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none; }
-      body ul li a:hover {
-        background-color: #111; }
+.Navbar {
+  background-color: #99ff99;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; }
+  .Navbar li {
+    float: right; }
+    .Navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none; }
+    .Navbar li a:hover {
+      background-color: #111; }
