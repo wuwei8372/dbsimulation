@@ -15,6 +15,7 @@ class SimuPanel extends Component {
 		return images.map(this.createEntry);
 	};
 
+
 	images = [
 		require('../images/1cell.jpg'),
 		require('../images/2cell.jpg'),

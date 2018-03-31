@@ -10,12 +10,12 @@ class CtrlPanel extends Component {
     	this.state = {
       		startCulture: 'Start Culture',
           reset: 'Reset',
-          calculate: 'Calculate Recipe'
-          
+          calculate: 'Calculate Recipe',
+            
     }
   }
-  
-  
+
+
   render()  {
     return (
     	<div className="CtrlPanel">

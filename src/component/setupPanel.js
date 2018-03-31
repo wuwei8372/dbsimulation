@@ -16,17 +16,22 @@ class SetupPanel extends Component {
 
   }
   handleChangeSp = (e) => {
-      this.setState({species:e.target.value})
+      this.setState({species:e.target.value});
+      this.props.callBackFromAppSp(e.target.value);
   };
   handleChangeTm = (e) => {
-      this.setState({temperature:e.target.value})
+      this.setState({temperature:e.target.value});
+      this.props.callBackFromAppTm(e.target.value);
   };
   handleChangeSa = (e) => {
-      this.setState({salinity:e.target.value})
+      this.setState({salinity:e.target.value});
+      this.props.callBackFromAppSa(e.target.value);
   };
   handleChangeDr = (e) => {
       this.setState({drug:e.target.value})
+      this.props.callBackFromAppDr(e.target.value);
   };
+  
 
   render()  {
     return (
