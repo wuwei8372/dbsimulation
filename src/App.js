@@ -32,17 +32,36 @@ class App extends Component {
   myCallbackDr = (dataFromSetup) => {
       this.setState({drug : dataFromSetup});
   };
-  simulate = (species) => {
-    if (species == 'Strongylocentrotus purpuratus') {
-      this.setState({imageIndexes : [0, 0, 0, 0, 0, 0, 0, 0]});
+  simulate = (species, temperature, salinity, drug) => {
+    if (salinity == '20' || salinity == '40') {
+      this.setState({imageIndexes : [0, 0, 0, 0, 0, 0, 0, 0, 0]});
+      return;
     }
+    if (drug == 'Fertilizer') {
+      this.setState({imageIndexes : [0, 0, 0, 0, 0, 0, 0, 0, 0]});
+      return;
+    }
+    if (species == 'Strongylocentrotus purpuratus' && temperature == '15') {
+      this.setState({imageIndexes : [0, 1, 2, 3, 4, 5, 6, 7, 8]});
+      return;
+    }
+    this.setState({imageIndexes : []});
+    
   };
+  reset = () => {
+    this.setState({temperature: '15'});
+    this.setState({salinity: '30'});
+    this.setState({drug: 'none'});
+    this.setState({species: 'Strongylocentrotus purpuratus'});
+    this.setState({imageIndexes: [0,1,2,3,4,5,6,7,8]});    
+  }
    // && temperature == '15' && salinity =='30' && drug == 'none'
   
   render() {
     return (
       <div className="App" >
         <Helmet>
+                // <style>{"{ backgroundImage: 'url(require(./images/egg.jpg))' }"}</style>
                 <style>{'body { background-color: #99ff99; }'}</style>
         </Helmet>
         <Navbar />
@@ -51,16 +70,20 @@ class App extends Component {
           
           <button
             className="btn btn-primary"
-            onClick={() => {this.simulate(this.state.species)}}>Start Simulate</button>
+            onClick={() => {this.simulate(this.state.species, this.state.temperature, this.state.salinity, this.state.drug)}}>Start Simulate</button>
           <button
             className="btn btn-primary"  
-            >Reset</button>
+            onClick={() => {this.reset()}}>Reset</button>
           <button
             className="btn btn-primary"  
             >Calculate Recipe</button>
           
         </div>
         <SetupPanel 
+            temperature = {this.state.temperature}
+            salinity = {this.state.salinity}
+            species = {this.state.species}
+            drug = {this.state.drug}
             callBackFromAppSp={this.myCallbackSp}
             callBackFromAppTm={this.myCallbackTm}
             callBackFromAppSa={this.myCallbackSa}
