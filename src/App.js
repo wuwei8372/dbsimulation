@@ -45,7 +45,7 @@ class App extends Component {
       this.setState({imageIndexes : [0, 1, 2, 3, 4, 5, 6, 7, 8]});
       return;
     }
-    this.setState({imageIndexes : []});
+    this.setState({imageIndexes : [9,9,9,9,9,9,9,9,9]});
     
   };
   reset = () => {
@@ -61,7 +61,7 @@ class App extends Component {
     return (
       <div className="App" >
         <Helmet>
-                // <style>{"{ backgroundImage: 'url(require(./images/egg.jpg))' }"}</style>
+                
                 <style>{'body { background-color: #99ff99; }'}</style>
         </Helmet>
         <Navbar />

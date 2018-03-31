@@ -14,7 +14,7 @@ class CtrlPanel extends Component {
             
     }
   }
-
+  
 
   render()  {
     return (

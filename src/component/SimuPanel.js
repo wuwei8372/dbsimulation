@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import "../Assets/css/SimuPanel.css"
 import $ from 'jquery';
-import Entry from './entry.js'
+
 import data from '../data/data.json'
 
 $('#entry-group').append("<div class='entry'> You are watching 5th object out of 100 </div>");;
 
 class SimuPanel extends Component {
-	createEntry (image) {
-		return <Entry source={image} key={image} />;
-	};
+	// createEntry (image) {
+	// 	return <Entry source={image} key={image} />;
+	// };
 
-	createEntries (images) {
-		return images.map(this.createEntry);
-	};
+	// createEntries (images) {
+	// 	return images.map(this.createEntry);
+	// };
 
 
 	images = [
@@ -26,6 +26,7 @@ class SimuPanel extends Component {
 		require('../images/MB.jpg'),
 		require('../images/Gastrula.jpg'),
 		require('../images/Plu.jpg'),
+		require('../images/NoInformation.jpg')
 	];
 	// test = this.props.first;
 	
