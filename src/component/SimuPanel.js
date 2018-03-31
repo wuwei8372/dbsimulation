@@ -27,50 +27,50 @@ class SimuPanel extends Component {
 		require('../images/Gastrula.jpg'),
 		require('../images/Plu.jpg'),
 	];
-	test = this.props.first;
+	// test = this.props.first;
 	
 
   render() {
     return (
     <div className='SimuPanel'>
-			
+		<p>{this.props.imageIndexesFromApp}</p>
 	    <div class="bar"></div>
 			<div class="timeline" id="entry-group">
 			    <div class="entry">
 			        <h1>0h</h1>
-			        <img src={this.images[this.test]} alt="fail to load"/>
+			        <img src={this.images[this.props.imageIndexesFromApp[0]]} alt="Please design experiment to test this experiment set-up, there is no available experiment data to do the simulation"/>
 			    </div>
 			    <div class="entry">
 			        <h1>1.5h</h1>
-			        <img src={this.images[1]} alt="fail to load"/>
+			        <img src={this.images[this.props.imageIndexesFromApp[1]]} alt="Please design experiment to test this experiment set-up, there is no available experiment data to do the simulation"/>
 			    </div>
 			    <div class="entry">
 			        <h1>2.5h</h1>
-			        <img src={this.images[2]} alt="fail to load"/>
+			        <img src={this.images[this.props.imageIndexesFromApp[2]]} alt="Please design experiment to test this experiment set-up, there is no available experiment data to do the simulation"/>
 			    </div>
 			    <div class="entry">
 			        <h1>3.5h</h1>
-			        <img src={this.images[3]} alt="fail to load"/>
+			        <img src={this.images[this.props.imageIndexesFromApp[3]]} alt="Please design experiment to test this experiment set-up, there is no available experiment data to do the simulation"/>
 			    </div>
 			    <div class="entry">
 			        <h1>4.5h</h1>
-			        <img src={this.images[4]} alt="fail to load"/>
+			        <img src={this.images[this.props.imageIndexesFromApp[4]]} alt="Please design experiment to test this experiment set-up, there is no available experiment data to do the simulation"/>
 			    </div>
 			    <div class="entry">
 			        <h1>15h</h1>
-			        <img src={this.images[5]} alt="fail to load"/>
+			        <img src={this.images[this.props.imageIndexesFromApp[5]]} alt="Please design experiment to test this experiment set-up, there is no available experiment data to do the simulation"/>
 			    </div>
 			    <div class="entry">
 			        <h1>19h</h1>
-			        <img src={this.images[6]} alt="fail to load"/>
+			        <img src={this.images[this.props.imageIndexesFromApp[6]]} alt="Please design experiment to test this experiment set-up, there is no available experiment data to do the simulation"/>
 			    </div>
 			    <div class="entry">
 			        <h1>35h</h1>
-			        <img src={this.images[7]} alt="fail to load"/>
+			        <img src={this.images[this.props.imageIndexesFromApp[7]]} alt="Please design experiment to test this experiment set-up, there is no available experiment data to do the simulation"/>
 			    </div>
 			    <div class="entry">
 			        <h1>72h</h1>
-			        <img src={this.images[8]} alt="fail to load"/>
+			        <img src={this.images[this.props.imageIndexesFromApp[8]]} alt="Please design experiment to test this experiment set-up, there is no available experiment data to do the simulation"/>
 			    </div>
 			</div>
 	</div> 
