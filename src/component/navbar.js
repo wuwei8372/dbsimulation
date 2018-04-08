@@ -8,6 +8,7 @@ class Navbar extends Component {
        <ul className='Navbar'>
 		  <li><a href="#">Simulation</a></li>
 		  <li><a href="#">Calculator</a></li>
+		  <li><a href="#">CoIP Analysis</a></li>
 		</ul> 
     );
   }

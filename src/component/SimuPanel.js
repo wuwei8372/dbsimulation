@@ -34,7 +34,7 @@ class SimuPanel extends Component {
   render() {
     return (
     <div className='SimuPanel'>
-		<p>{this.props.imageIndexesFromApp}</p>
+		
 	    <div class="bar"></div>
 			<div class="timeline" id="entry-group">
 			    <div class="entry">

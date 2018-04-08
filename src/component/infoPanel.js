@@ -10,13 +10,13 @@ class InfoPanel extends Component {
 	  			<div className="panel-heading">Information Panel</div>
 	  			<div className="panel-body">
 			       	<p>
-			       	The current selection of species is: {this.props.species}
+			       	The current selection of species is: {this.props.species} 
 			       	</p>
 			       	<p>
-			       	The current selection of temperature is: {this.props.temperature}
+			       	The current selection of temperature is: {this.props.temperature} degree celcius
 			       	</p>
 			       	<p>
-			       	The current selection of salinity is: {this.props.salinity}
+			       	The current selection of salinity is: {this.props.salinity} ppt
 			       	</p>
 			       	<p>
 			       	The current selection of durg is: {this.props.drug}

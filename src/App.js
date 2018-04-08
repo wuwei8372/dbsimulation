@@ -45,6 +45,21 @@ class App extends Component {
       this.setState({imageIndexes : [0, 1, 2, 3, 4, 5, 6, 7, 8]});
       return;
     }
+    if (species == 'Lytechinus variegatus' && temperature == '20') {
+      // should find a 60 cell stage later
+      this.setState({imageIndexes: [0,1,2,3,4,6,7,8,8]});
+      return;
+    }
+    if (species == 'Lytechinus variegatus' && temperature == '23') {
+      // should find a 60 cell stage later
+      this.setState({imageIndexes: [0,2,4,5,7,8,8,8,8]});
+      return;
+    }
+    if (species == 'Lytechinus variegatus' && temperature == '25') {
+      // should find a 60 cell stage later
+      this.setState({imageIndexes: [0,3,4,6,6,8,8,8,8]});
+      return;
+    }
     this.setState({imageIndexes : [9,9,9,9,9,9,9,9,9]});
     
   };
@@ -61,11 +76,10 @@ class App extends Component {
     return (
       <div className="App" >
         <Helmet>
-                
                 <style>{'body { background-color: #99ff99; }'}</style>
         </Helmet>
         <Navbar />
-        <p>{this.state.species} {this.state.temperature} {this.state.salinity} {this.state.drug} {this.state.imageIndexes}</p>
+        
         <div className="btn-group">
           
           <button
