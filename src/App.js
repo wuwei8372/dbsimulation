@@ -75,23 +75,23 @@ class App extends Component {
   render() {
     return (
       <div className="App" >
-        <Helmet>
-                <style>{'body { background-color: #99ff99; }'}</style>
-        </Helmet>
-        <Navbar />
         
-        <div className="btn-group">
-          
-          <button
-            className="btn btn-primary"
-            onClick={() => {this.simulate(this.state.species, this.state.temperature, this.state.salinity, this.state.drug)}}>Start Simulate</button>
-          <button
-            className="btn btn-primary"  
-            onClick={() => {this.reset()}}>Reset</button>
-          <button
-            className="btn btn-primary"  
-            >Calculate Recipe</button>
-          
+        <Navbar />
+        <div className="btn-div">
+          <h4> Control Panel </h4>
+          <div className="btn-group">
+            
+            <button
+              
+              onClick={() => {this.simulate(this.state.species, this.state.temperature, this.state.salinity, this.state.drug)}}>Start Simulate</button>
+            <button
+                
+              onClick={() => {this.reset()}}>Reset</button>
+            <button
+              
+              >Calculate Recipe</button>
+            
+          </div>
         </div>
         <SetupPanel 
             temperature = {this.state.temperature}

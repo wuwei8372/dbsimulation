@@ -34,7 +34,7 @@ class SimuPanel extends Component {
   render() {
     return (
     <div className='SimuPanel'>
-		
+		<h5> The development of sea urchin embryo is simulated below based on your experiment set-up: </h5>
 	    <div class="bar"></div>
 			<div class="timeline" id="entry-group">
 			    <div class="entry">

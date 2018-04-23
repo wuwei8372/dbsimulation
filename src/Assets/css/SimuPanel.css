@@ -11,7 +11,8 @@
 .entry {
   display: inline-block;
   vertical-align: top;
-  background: #13519C;
+  /*background: #13519C;*/
+  background: white;
   color: #fff;
   padding: 10px;
   font-size: 12px;
@@ -19,8 +20,8 @@
   position: relative;
   border-top: 4px solid #06182E;
   border-radius: 3px;
-  min-width: 175px;
-  max-width: 175px; }
+  min-width: 160px;
+  max-width: 160px; }
 
 .entry img {
   display: block;
@@ -53,7 +54,8 @@
   margin-left: -2px; }
 
 .entry h1 {
-  color: #fff;
+  /*color: #fff;*/
+  color: black;
   font-size: 18px;
   font-family: Georgia, serif;
   font-weight: bold;

@@ -7,24 +7,21 @@ class InfoPanel extends Component {
     return (
     	<div className='InfoPanel'>
 	    	<div className="panel panel-default">
-	  			<div className="panel-heading">Information Panel</div>
+	  			<h4>Information Panel</h4>
 	  			<div className="panel-body">
 			       	<p>
-			       	The current selection of species is: {this.props.species} 
+			       	The current selection of species is: <strong>{this.props.species} </strong>
 			       	</p>
 			       	<p>
-			       	The current selection of temperature is: {this.props.temperature} degree celcius
+			       	The current selection of temperature is: <strong>{this.props.temperature} degree celcius </strong>
 			       	</p>
 			       	<p>
-			       	The current selection of salinity is: {this.props.salinity} ppt
+			       	The current selection of salinity is: <strong>{this.props.salinity} ppt </strong>
 			       	</p>
 			       	<p>
-			       	The current selection of durg is: {this.props.drug}
+			       	The current selection of durg is: <strong> {this.props.drug} </strong>
 			       	</p>
-			       	<p>
-			       	The current recipe for reagent needed for the experiment is:
-			       	</p>
-	  			</div>
+			       	</div>
 			</div>
     	</div>
     );

@@ -26,8 +26,9 @@ class SetupPanel extends Component {
   render()  {
     return (
     	<div className="SetupPanel">
-        <h2>Set-up Panel</h2>
-          <div className="select group">
+      <div className="selectGroup">
+        <h4>Set-up Panel</h4>
+          <div className="btn-group">
           <select value={this.props.species} onChange={this.handleChangeSp}>
             test
             <option value="Strongylocentrotus purpuratus">Species selected: Strongylocentrotus purpuratus</option>
@@ -49,6 +50,7 @@ class SetupPanel extends Component {
             <option value='ATA'>Drug selected: "ATA"</option>
             <option value='Fertilizer'>Drug selected: "Fertilizer"</option>
           </select>
+          </div>
           </div>
         <InfoPanel species={this.props.species} temperature={this.props.temperature} salinity={this.props.salinity} drug={this.props.drug}/>
       </div>
