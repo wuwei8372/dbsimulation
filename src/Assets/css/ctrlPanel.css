@@ -21,7 +21,7 @@
 
    }
 .btn-group button:hover { 
-    background-color: #99E051;
+    background-color: #82E41F;
 }
 
 .btn-group select {
@@ -51,7 +51,8 @@ div.btn-div {
   /*box-shadow: 5px 5px grey;*/
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
   padding-bottom:  0.3em;
-  background: #FBFBFB;
+  /*background: #FBFBFB;*/
+  background: #E8ECE3;
   margin-top: 0.3em;
   margin-bottom: 0.5em;
   border: 1px solid grey;

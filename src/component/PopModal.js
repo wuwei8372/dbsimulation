@@ -12,7 +12,7 @@ class CustomModal extends Component {
   render()  {
     return (
 	    <Popup trigger={<button onClick={() => {this.calculate()}}> Calculate Recipe </button>} position="right center">
-	    	<div>The Recipe is: {this.props.SWrecipe} {this.props.drugRecipe}</div>
+	    	<div>The recipe based on current set-up is: <strong> {this.props.SWrecipe} {this.props.drugRecipe} </strong></div>
 	    </Popup>
  	);
   }
