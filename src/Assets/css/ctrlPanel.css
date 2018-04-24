@@ -20,6 +20,10 @@
   margin: 10px;
 
    }
+.btn-group button:hover { 
+    background-color: #99E051;
+}
+
 .btn-group select {
   
   max-width: 1200px;
