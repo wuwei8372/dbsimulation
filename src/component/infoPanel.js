@@ -19,7 +19,7 @@ class InfoPanel extends Component {
 			       	The current selection of salinity is: <strong>{this.props.salinity} ppt </strong>
 			       	</p>
 			       	<p>
-			       	The current selection of durg is: <strong> {this.props.drug} </strong>
+			       	The current selection of drug is: <strong> {this.props.drug} </strong>
 			       	</p>
 			       	</div>
 			</div>
