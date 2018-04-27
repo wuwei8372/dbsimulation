@@ -102,7 +102,9 @@ class App extends Component {
     this.setState({salinity: '30'});
     this.setState({drug: 'none'});
     this.setState({species: 'Strongylocentrotus purpuratus'});
-    this.setState({imageIndexes: [0,1,2,3,4,5,6,7,8]});    
+    this.setState({imageIndexes: [0,1,2,3,4,5,6,7,8]});
+    this.setState({SWrecipe : "450 mM NaCl, 10 mM KCl, 9 mM CaCl2, 30 mM MgCl2·6H2O, 16 mM MgSO4·7H2O"});
+    this.setState({drugRecipe : ""});    
   }
    // && temperature == '15' && salinity =='30' && drug == 'none'
   
